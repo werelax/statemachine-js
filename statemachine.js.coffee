@@ -89,6 +89,7 @@ class StateMachine
   before_filters_for: (state) ->
     filters = []
     append = (source) ->
+      return unless source?
       if _.isFunction(source)
         filters.push(source)
       else if _.isArray(source)
