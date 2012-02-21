@@ -9,14 +9,6 @@
 # (1) The W.Channel() should be external.
 #   1.a - Provide a way to feed events to the machine flexibly
 #         (being W.Channel adapted to this)
-#
-# (2) Context of execution of filters, states, transitions
-#   2.a - Is confusing to use a new blank state in each cycle
-#   2.b - Use a persistent, user-specified .context object
-#
-# (3) Refactor the 'start' method
-#   3.a - Make it much simpler, cleaner
-#   3.b - Think in a better way to express and handle events
 
 # Things I like:
 #   - Extremely flexible: you can use it in many different ways
