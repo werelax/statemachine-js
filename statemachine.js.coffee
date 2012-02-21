@@ -47,7 +47,7 @@ class StateMachine
       event.from = all_states if event.from == '*'
       origins = if _.isArray(event.from) then event.from else [event.from]
       sm.send[event.name] = (args...) ->
-        sm.state_change(event.to, args) if sm.active_sate in origins
+        sm.state_change(event.to, args) if sm.active_state in origins
 
   validate_transition: (new_state) ->
     current = @states[@active_state]
